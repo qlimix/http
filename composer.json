@@ -10,7 +10,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "\\Qlimix\\Http\\": "src/"
+            "Qlimix\\Http\\": "src/"
         }
     },
     "config": {

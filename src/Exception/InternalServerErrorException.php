@@ -2,14 +2,12 @@
 
 namespace Qlimix\Http\Exception;
 
-final class InternalServerErrorException extends \Exception
+use Throwable;
+
+final class InternalServerErrorException extends HttpException
 {
-    /**
-     * @param \Throwable $previous
-     * @param string $message
-     */
-    public function __construct(\Throwable $previous, string $message = 'Internal server error')
+    public function __construct(Throwable $previous, string $message = 'Internal server error')
     {
-        parent::__construct($message, 0, $previous);
+        parent::__construct(500, $message, $previous);
     }
 }

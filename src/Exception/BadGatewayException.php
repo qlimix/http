@@ -2,14 +2,12 @@
 
 namespace Qlimix\Http\Exception;
 
-final class BadGatewayException extends \Exception
+use Throwable;
+
+final class BadGatewayException extends HttpException
 {
-    /**
-     * @param string $message
-     * @param \Throwable $previous
-     */
-    public function __construct(string $message = 'Bad gateway', \Throwable $previous = null)
+    public function __construct(string $message = 'Bad gateway', Throwable $previous = null)
     {
-        parent::__construct($message, 0, $previous);
+        parent::__construct(502, $message, $previous);
     }
 }

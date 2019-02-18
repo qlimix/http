@@ -12,5 +12,5 @@ interface HttpResponseBuilderInterface
      *
      * @throws HttpResponseBuilderException
      */
-    public function build($data, int $status = 200, array $headers = []): ResponseInterface;
+    public function build($data): ResponseInterface;
 }

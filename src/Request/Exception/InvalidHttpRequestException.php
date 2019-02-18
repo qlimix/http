@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Qlimix\Http\Validation\Exception;
+namespace Qlimix\Http\Request\Exception;
 
 use Exception;
 use Psr\Http\Message\ResponseInterface;

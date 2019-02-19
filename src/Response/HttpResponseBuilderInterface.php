@@ -8,9 +8,9 @@ use Qlimix\Http\Response\Exception\HttpResponseBuilderException;
 interface HttpResponseBuilderInterface
 {
     /**
-     * @param mixed $data
+     * @param mixed $response
      *
      * @throws HttpResponseBuilderException
      */
-    public function build($data): ResponseInterface;
+    public function build($response): ResponseInterface;
 }

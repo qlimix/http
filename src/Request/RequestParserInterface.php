@@ -6,11 +6,11 @@ use Psr\Http\Message\ServerRequestInterface;
 use Qlimix\Http\Exception\HttpException;
 use Qlimix\Http\Request\Exception\InvalidHttpRequestException;
 
-interface RequestInspectorInterface
+interface RequestParserInterface
 {
     /**
      * @throws InvalidHttpRequestException
      * @throws HttpException
      */
-    public function inspect(ServerRequestInterface $request): array;
+    public function parse(ServerRequestInterface $request): array;
 }

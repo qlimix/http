@@ -4,8 +4,17 @@ namespace Qlimix\Http\Exception;
 
 final class BadRequestException extends HttpException
 {
-    public function __construct()
+    /** @var array */
+    private $response;
+
+    public function __construct(array $response, int $httpCode = 400, string $message = 'Bad Request')
     {
-        parent::__construct(400, 'Bad Request');
+        parent::__construct($httpCode, $message);
+        $this->response = $response;
+    }
+
+    public function getResponse(): array
+    {
+        return $this->response;
     }
 }

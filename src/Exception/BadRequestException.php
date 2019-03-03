@@ -7,9 +7,9 @@ final class BadRequestException extends HttpException
     /** @var array */
     private $response;
 
-    public function __construct(array $response, int $httpCode = 400, string $message = 'Bad Request')
+    public function __construct(array $response, string $message = 'Bad Request')
     {
-        parent::__construct($httpCode, $message);
+        parent::__construct(400, $message);
         $this->response = $response;
     }
 

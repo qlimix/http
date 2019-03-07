@@ -3,14 +3,14 @@
 namespace Qlimix\Http\Response;
 
 use Psr\Http\Message\ResponseInterface;
-use Qlimix\Http\Response\Exception\HttpResponseBuilderException;
+use Qlimix\Http\Response\Exception\ResponseBuilderException;
 
-interface HttpResponseBuilderInterface
+interface ResponseBuilderInterface
 {
     /**
      * @param mixed $response
      *
-     * @throws HttpResponseBuilderException
+     * @throws ResponseBuilderException
      */
     public function build($response): ResponseInterface;
 }

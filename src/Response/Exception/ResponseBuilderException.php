@@ -4,6 +4,6 @@ namespace Qlimix\Http\Response\Exception;
 
 use Exception;
 
-final class HttpResponseBuilderException extends Exception
+final class ResponseBuilderException extends Exception
 {
 }

@@ -7,8 +7,8 @@ use Throwable;
 
 final class ResponseBuilderException extends Exception
 {
-    public function __construct(Throwable $previous = null)
+    public function __construct(string $message, ?Throwable $previous = null)
     {
-        parent::__construct($previous);
+        parent::__construct($message, 0, $previous);
     }
 }

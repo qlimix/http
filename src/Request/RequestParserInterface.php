@@ -8,6 +8,8 @@ use Qlimix\Http\Exception\HttpException;
 interface RequestParserInterface
 {
     /**
+     * @return mixed[]
+     *
      * @throws HttpException
      */
     public function parse(ServerRequestInterface $request): array;

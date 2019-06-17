@@ -6,7 +6,7 @@ use Throwable;
 
 final class NotFoundException extends HttpException
 {
-    public function __construct(string $message = 'Not found', Throwable $previous = null)
+    public function __construct(string $message = 'Not found', ?Throwable $previous = null)
     {
         parent::__construct(404, $message, $previous);
     }

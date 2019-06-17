@@ -1,13 +1,21 @@
 {
     "name": "qlimix/http",
-    "type": "project",
-    "license": "LGPL-3.0-only",
+    "type": "library",
+    "description": "Http helper interfaces and exceptions",
+    "license": "MIT",
+    "keywords": [
+        "http"
+    ],
     "authors": [
         {
             "name": "frank",
             "email": "frank@qlimix.net"
         }
     ],
+    "require": {
+        "php": ">=7.2",
+        "psr/http-server-handler": "^1.0"
+    },
     "autoload": {
         "psr-4": {
             "Qlimix\\Http\\": "src/"
@@ -16,10 +24,7 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "ext-json": "*",
-        "psr/http-server-handler": "^1.0"
+    "require-dev": {
+        "qlimix/code-standard": "^1.0"
     }
 }

@@ -10,5 +10,5 @@ interface ResponseInterface
      * @param mixed[] $data
      * @param mixed[] $headers
      */
-    public function createJsonResponse(array $data, int $status = 200, array $headers = []): PSRResponseInterface;
+    public function response(array $data, int $status = 200, array $headers = []): PSRResponseInterface;
 }

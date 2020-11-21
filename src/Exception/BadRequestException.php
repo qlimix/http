@@ -5,7 +5,7 @@ namespace Qlimix\Http\Exception;
 final class BadRequestException extends HttpException
 {
     /** @var mixed[] */
-    private $response;
+    private array $response;
 
     /**
      * @param mixed[] $response

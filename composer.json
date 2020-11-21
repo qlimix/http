@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": ">7.4",
         "psr/http-server-handler": "^1.0"
     },
     "autoload": {
@@ -25,6 +25,6 @@
         "sort-packages": true
     },
     "require-dev": {
-        "qlimix/code-standard": "^1.0"
+        "qlimix/code-standard": "^3.0"
     }
 }

@@ -7,8 +7,7 @@ use Throwable;
 
 class HttpException extends Exception
 {
-    /** @var int */
-    private $httpCode;
+    private int $httpCode;
 
     public function __construct(int $httpCode, string $message = '', ?Throwable $previous = null)
     {
